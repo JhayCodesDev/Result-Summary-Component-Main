@@ -29,6 +29,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding: 0;
 }
 
 #sub-container{
@@ -200,13 +201,9 @@ h2{
 }
 
 @media screen and (min-width: 320px)  and (max-width: 767.5px){
-    body{
-        display: block;
-    }
-
     #sub-container{
         display: block;
-       margin: 0 auto;
+        margin: 0 auto;
    }
 
     #con-one, #con-two{
@@ -220,7 +217,7 @@ h2{
     }
 
     #con-one p{
-    font-size: 14px;
+        font-size: 14px;
     }
 
     #con-two h3{

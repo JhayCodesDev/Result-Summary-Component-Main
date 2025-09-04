@@ -32,7 +32,7 @@ body{
     padding: 0;
 }
 
-#sub-container{
+.sub-container{
     display: flex;
 }
 
@@ -45,7 +45,7 @@ p{
     font-weight: 500;
 }
 
-#con-one{
+.con-one{
     width: 300px;
     background: linear-gradient(
     to bottom,
@@ -59,7 +59,7 @@ p{
 
 }
 
-#con-one p{
+.con-one p{
     color: hsl(0, 0%, 100%);
     opacity: 0.6;
     font-size: 18px;
@@ -67,7 +67,7 @@ p{
     margin-left: 28px;
 }
 
-#con-one .circle{
+.con-one .circle{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -81,13 +81,13 @@ p{
     justify-content: center;
 }
 
-#con-one .circle h1{
+.con-one .circle h1{
     position: relative;
     color: hsl(0, 0%, 100%);
     font-size: 50px;
 }
 
-#con-one span{
+.con-one span{
     font-size: 14px;
     opacity: 0.5;
     position: relative;
@@ -99,7 +99,7 @@ h2{
     color: hsl(0, 0%, 100%);
 }
 
-#con-two{
+.con-two{
     width: 300px;
     height: 330px;
     background-color: hsl(0, 0%, 100%);
@@ -109,19 +109,24 @@ h2{
     margin-left: -30px;
 }
 
-#con-two .sub{
+.con-two .sub{
     width: 90%;
     margin-left: 30px;
     height: 100%;
 }
 
-#con-two h3{
+.con-two h3{
     position: relative;
     top: -20px;
     text-align: left;
 }
 
-#con-two .sum-one{
+.con-two .sum-one, .sum-two, .sum-three, .sum-four{
+    display: flex;
+    justify-content: space-between;
+}
+
+.con-two .sum-one{
     background-color: hsl(0, 60%, 95%);
     position: relative;
     top: -10px;
@@ -130,14 +135,14 @@ h2{
     align-items: center;
 }
 
-#con-two .sum-two{
+.con-two .sum-two{
     background-color: hsl(30, 43%, 95%);
     border-radius: 12px;
     height: 40px;
     align-items: center;
 }
 
-#con-two .sum-three{
+.con-two .sum-three{
     position: relative;
     top: 10px;
     background-color: hsl(168, 17%, 94%);
@@ -146,7 +151,7 @@ h2{
     align-items: center;
 }
 
-#con-two .sum-four{
+.con-two .sum-four{
     position: relative;
     top: 20px;
     background-color: hsl(221, 100%, 96%);
@@ -155,28 +160,28 @@ h2{
     align-items: center;
 }
 
-#con-two div img{
+.con-two div img{
    position: relative;
    top: 3px;
 }
 
-#con-two .sum-one p:nth-of-type(1){
+.con-two .sum-one p:nth-of-type(1){
     color: hsl(0, 100%, 67%);
 }
 
-#con-two .sum-two p:nth-of-type(1){
+.con-two .sum-two p:nth-of-type(1){
     color:hsl(39, 100%, 56%);
 }
 
-#con-two .sum-three p:nth-of-type(1){
+.con-two .sum-three p:nth-of-type(1){
     color: hsl(166, 100%, 37%);
 }
 
-#con-two .sum-four p:nth-of-type(1){
+.con-two .sum-four p:nth-of-type(1){
     color: hsl(234, 85%, 45%);
 }
 
-#con-two button{
+.con-two button{
     position: relative;
     top: 60px;
     width: 270px;
@@ -187,7 +192,7 @@ h2{
     color: hsl(0, 0%, 100%);
 }
 
-#con-two button:hover{
+.con-two button:hover{
     background-color: hsl(224, 30%, 27%);
     cursor: pointer;
 }
@@ -201,30 +206,30 @@ h2{
 }
 
 @media screen and (min-width: 320px)  and (max-width: 767.5px){
-    #sub-container{
+    .sub-container{
         display: block;
         margin: 0 auto;
    }
 
-    #con-one, #con-two{
+    .con-one, .con-two{
         margin: 0 auto;
     }
 
-    #con-one{
+    .con-one{
         padding: 40px;
         position: relative;
         left: -0px;
     }
 
-    #con-one p{
+    .con-one p{
         font-size: 14px;
     }
 
-    #con-two h3{
+    .con-two h3{
         font-size: 20px;
     }
 
-    #con-two .sub{
+    .con-two .sub{
         margin: 0 auto;
     }
 }
